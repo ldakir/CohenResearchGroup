@@ -1,3 +1,43 @@
+"""
+README
+The following script allows to analyze individual spectral lines from Chandra observations
+To use this script you must have the following files saved as indicated below:
+
+1- Model pow+windprof:
+    linename_pow+windprof.txt
+
+2- Model pow:
+    linename_pow.txt
+
+3- Model windprof
+    linename_windprof.txt
+
+4- Line information file:
+    linename_info.txt
+
+The information file has the following form:
+line_wavelength
+line_name
+T_star
+R_o
+chi_squared
+pho_num
+norm
+
+Here is an example for NeX_info.txt:
+12.134
+Ne X
+$2.92^{+0.55}_{-0.49}$
+$1.02$
+41.20
+184
+$2.70_{-0.22}^{+0.24}\times 10^{-4}$
+
+To run the script simple type the following command:
+>python3 line_spectra.py linename
+"""
+
+
 # Importing libraries
 import sys
 import numpy as np
