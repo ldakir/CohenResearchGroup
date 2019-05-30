@@ -35,6 +35,8 @@ $2.70_{-0.22}^{+0.24}\times 10^{-4}$
 
 To run the script simple type the following command:
 >python3 line_spectra.py linename
+
+Note: No need to edit the files, the script takes care of the header
 """
 
 
@@ -55,9 +57,9 @@ plt.rcParams.update(params)
 
 # Uploading files with data to be plotted
 file = sys.argv[1]
-line_data=np.genfromtxt(file+'_pow+windprof.txt', skip_header=0)
-line_pow=np.genfromtxt(file+'_pow.txt',skip_header=0)
-line_windprof=np.genfromtxt(file+'_windprof.txt',skip_header=0)
+line_data=np.genfromtxt(file+'_pow+windprof.txt', skip_header=3)
+line_pow=np.genfromtxt(file+'_pow.txt',skip_header=3)
+line_windprof=np.genfromtxt(file+'_windprof.txt',skip_header=3)
 
 
 # Defining parameters specific to each spectral line
