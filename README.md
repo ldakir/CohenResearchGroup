@@ -19,7 +19,7 @@ Within the "ObsID", there are two folders:
 
 ## How to get add contents:
 
-- Before adding anything, make sure to git pull. This is necessary to avoid merge problems <br/>
+##### Before adding anything, make sure to git pull. This is necessary to avoid merge problems. <br/>
 
 Let's say you want to add plots from the 21659 data set of zeta pup:
 
