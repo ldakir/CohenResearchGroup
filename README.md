@@ -8,7 +8,7 @@
 
 ## How to navigate this repository:
 
-For now, I have only included zeta Pup observations. If you open the zpup folder you would find folders saved as "ObsID". Each ObsID represents a different cycle of observations. <br/>
+For now, I have only included zeta Pup observations. If you open the ZPUP folder you would find folders saved as "ObsID". Each ObsID represents a different cycle of observations. <br/>
 Within the "ObsID", there are two folders:  
   - DATA: contains data from xspec. 
   - PLOTS: contains results. <br/>
