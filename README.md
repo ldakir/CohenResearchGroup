@@ -34,11 +34,18 @@ Let's say you want to add plots from the 21659 data set of zeta pup:
 	> git commit -m "21659 plots"
 	> git push
 	
-If you open the repository, your plots should be there! 
+If you open the repository, your plots should be there.
 
 
+## How to remove a file:
+
+Let's remove for example testing.txt:
 	
-
+	> git rm testing.txt
+	> git commit -m "Deleting a file"
+	> git push
+	
+The file should disappear from the repository and from your computer. 
 
 
 
