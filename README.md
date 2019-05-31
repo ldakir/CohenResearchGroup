@@ -12,7 +12,7 @@ For now, I have only included zeta Pup observations. If you open the zpup folder
 Within the "ObsID", there are two folders:  
   - DATA: contains data from xspec. 
   - PLOTS: contains results. <br/>
-#### Note: In the zpup folder there is also an excel sheet containing all necessary information about each spectral line
+#### Note: In the ZPUP folder there is also an excel sheet containing all necessary information about each spectral line
 
 ## How to get repository on your computer:
 	git clone https://github.com/ldakir/CohenResearchGroup.git
@@ -24,7 +24,7 @@ Within the "ObsID", there are two folders:
 Let's say you want to add plots from the 21659 data set of zeta pup:
 
 	> cd CohenResearchGroup
-	> cd zpup  
+	> cd ZPUP  
 	> mkdir 21659  
 	> cd 21659
 	> mkdir PLOTS  
