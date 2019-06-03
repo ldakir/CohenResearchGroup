@@ -17,7 +17,7 @@ Within the "ObsID", there are two folders:
 ## How to get repository on your computer:
 	git clone https://github.com/ldakir/CohenResearchGroup.git
 
-## How to get add contents:
+## How to add contents:
 
 ##### Before adding anything, make sure to git pull. This is necessary to avoid merge problems. <br/>
 
