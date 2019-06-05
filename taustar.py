@@ -17,30 +17,37 @@ def get_data(file):
     return contents
 
 #Importing data
-data = get_data(sys.argv[1])
-size_data = len(data)
+data1 = get_data(sys.argv[1])
+data1_name= sys.argv[1].split('_')[0]
+size_data = len(data1)
 
 #Storing data
-taustar_old = data[0:size_data,1]
-min_error_old = data[0:size_data,2]
-max_error_old= data[0:size_data,3]
-error_old = np.array([min_error_old, max_error_old])
-taustar_new = data[0:size_data,4]
-min_error_new = data[0:size_data,5]
-max_error_new= data[0:size_data,6]
-error_new = np.array([min_error_new, max_error_new])
+taustar_1 = data1[0:size_data,1]
+min_error_1 = data1[0:size_data,2]
+max_error_1= data1[0:size_data,3]
+error_1 = np.array([min_error_1, max_error_1])
+
+data2 = get_data(sys.argv[2])
+data2_name=sys.argv[2].split('_')[0]
+size_data2 = len(data2)
+taustar_2 = data2[0:size_data2,1]
+min_error_2 = data2[0:size_data2,2]
+max_error_2= data2[0:size_data2,3]
+error_2 = np.array([min_error_2, max_error_2])
+
 
 #Plotting Wavelength vs Taustar with errorbars
 plt.figure(figsize = (10, 8))
-plt.plot(taustar_old, taustar_new, 'ko')
-plt.xlabel(r'$\tau_{\star}$', fontname=tnr, fontsize=23)
-plt.ylabel(r'$\tau_{\star}$', fontname=tnr, fontsize=23)
-plt.errorbar(taustar_old, taustar_new, yerr= error_new, ls='none',color='red',linewidth=0.5,capsize=1.5,capthick=1)
-plt.errorbar(taustar_old, taustar_new, xerr= error_old, ls='none',color='blue',linewidth=0.5,capsize=1.5,capthick=1)
+plt.plot(taustar_1, taustar_2, 'ko')
+plt.xlabel(data1_name+ ' '+r'$ \tau_{\star}$', fontname=tnr, fontsize=23)
+plt.ylabel(data2_name+' '+r'$ \tau_{\star}$', fontname=tnr, fontsize=23)
+plt.errorbar(taustar_1, taustar_2, yerr= error_2, ls='none',color='lightgrey',linewidth=0.5,capsize=1.5,capthick=1)
+plt.errorbar(taustar_1, taustar_2, xerr= error_1, ls='none',color='lightgrey',linewidth=0.5,capsize=1.5,capthick=1)
 
 x =[0,1,2,3,4]
 y =[0,1,2,3,4]
-plt.plot(x,y,'g-')
+plt.plot(x,y,'r-')
 plt.xticks(fontname=tnr, fontsize=19)
 plt.yticks(fontname=tnr, fontsize=19)
+plt.savefig('Taustar'+data1_name+'vs'+data2_name)
 plt.show()
