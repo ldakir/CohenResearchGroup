@@ -7,3 +7,4 @@ wavelength	taustar	t_lower_error	t_upper_error	Ro	Ro_lower_error	Ro_upper_error	
 11.544 		2.64 	0.76 		1.76 		1.01 	0.01 		1.49		6.57E-5	1.20E-5			1.31E-5			NeIX
 12.134 		2.75 	0.50 		0.68		1.18 	0.18 		0.45		2.79E-4	0.27E-4			0.29E-4			NeX
 15.014 		2.67 	1.04 		1.54		1.75 	0.75		0.73		5.88E-4	0.70E-4			0.76E-4			FeXVII
+16.780		2.01	0.99		1.48		1.49	0.34		0.39		3.86E-4	0.81E-4			0.93E-4			FeXVII
