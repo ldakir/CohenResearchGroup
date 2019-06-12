@@ -2,7 +2,9 @@
 
 ## The following repository contains:
 
-  - Scripts to analyze and visualize Chandra observations of zeta Pup for single spectral lines
+  - Scripts to analyze and visualize Chandra observations of zeta Pup for all spectra data and single spectral lines 
+  - Scripts to find the best fit model of Ro, Norm and Taustar using statistical techniques 
+  - Script that produces a contour plot of optical depth, redshift, and intensity
   - Data of the Chandra observations of zeta Pup
   - Plots of single spectral lines
 
